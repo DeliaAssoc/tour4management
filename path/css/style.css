@@ -888,14 +888,14 @@ image, svg, img {
   }
 
   .computer .animation {
-    left: initial;
+    left: 0;
     height: 509px;
     width: 905px;
     margin-top: -40px;
   }
 
   .computer .image {
-    left: initial;
+    left: 0;
     height: 509px;
     width: 905px;
     margin-top: -40px;
