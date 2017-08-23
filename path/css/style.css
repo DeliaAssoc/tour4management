@@ -88,6 +88,32 @@ image, svg, img {
   display: none;
 }
 
+fieldset {
+  position: relative;
+}
+
+.please-select {
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  background-color: #A03123;
+  padding: 10px;
+  width: 300px;
+  border-radius: 20px;
+  margin: 0 auto;
+  color: #ffffff;
+  bottom: 60px;
+}
+
+.please-select.inactive {
+  display: none;
+}
+
+.please-select.active {
+  display: block;
+}
+
 .tip.animated {
   -webkit-transition-delay: 10s !important;
   transition-delay: 10s !important;
