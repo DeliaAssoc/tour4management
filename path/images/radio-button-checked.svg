@@ -1,29 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="-9897.123 680.243 23.635 23.634">
-  <defs>
-    <style>
-      .cls-1, .cls-4 {
-        fill: none;
-      }
-
-      .cls-1 {
-        stroke: #003a47;
-        stroke-width: 2px;
-      }
-
-      .cls-2 {
-        fill: #003a47;
-      }
-
-      .cls-3 {
-        stroke: none;
-      }
-    </style>
-  </defs>
-  <g id="Group_232" data-name="Group 232" transform="translate(-10629)">
-    <g id="Ellipse_9" data-name="Ellipse 9" class="cls-1" transform="translate(731.877 680.243)">
-      <ellipse class="cls-3" cx="11.817" cy="11.817" rx="11.817" ry="11.817"/>
-      <ellipse class="cls-4" cx="11.817" cy="11.817" rx="10.817" ry="10.817"/>
-    </g>
-    <circle id="Ellipse_10" data-name="Ellipse 10" class="cls-2" cx="8.204" cy="8.204" r="8.204" transform="translate(735.612 683.735)"/>
-  </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="-293 385.4 23.6 23.6" style="enable-background:new -293 385.4 23.6 23.6;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;}
+	.st1{fill:none;stroke:#003A47;stroke-width:2;}
+	.st2{fill:#003A47;}
+</style>
+<g id="Group_232" transform="translate(-10629)">
+	<g id="Ellipse_9" transform="translate(731.877 680.243)">
+		<ellipse class="st0" cx="9615.9" cy="-283" rx="11.8" ry="11.8"/>
+		<ellipse class="st1" cx="9615.9" cy="-283" rx="10.8" ry="10.8"/>
+	</g>
+	<circle id="Ellipse_10" class="st2" cx="10347.9" cy="397.1" r="8.2"/>
+</g>
 </svg>

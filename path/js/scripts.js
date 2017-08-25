@@ -14,7 +14,8 @@ var anim_p01s01,
     anim_p02s02,
     anim_p02s03,
     anim_p02s04,
-    anim_p04s02
+    anim_p04s02,
+    anim_p04s05
 
 
 
@@ -39,6 +40,7 @@ function init_anim(selector, data) {
   bodymovin.destroy( anim_p02s03 );
   bodymovin.destroy( anim_p02s04 );
   bodymovin.destroy( anim_p04s02 );
+  bodymovin.destroy( anim_p04s05 );
 
   
   var animData = {
@@ -678,9 +680,10 @@ function anim_p04_2_1( prev )
   // Activate screen/animation and tooltip
   // Check to see if click is from previous link
   if ( prev != null ) {
-
+    anim_p4_s2.stop();
   } else {
     $( '#anim_p04s02' ).toggleClass( 'inactive active' );
+    anim_p4_s2 = init_anim( 'anim_p04s02', '../bodymovin/p04s02/data.json' );
   }
   setTimeout( function() { $( '#tip_p04s02-1' ).toggleClass( 'inactive active' ); }, 750 );
 };
@@ -691,10 +694,20 @@ function anim_p04_2_2( prev )
   // Check to see if click is from previous link
   if ( prev != null ) {
     $( '#anim_p04s02' ).toggleClass( 'inactive active' );
+     anim_p4_s2 = init_anim( 'anim_p04s02', '../bodymovin/p04s02/data.json' );
   } else {
 
   }
   setTimeout( function() { $( '#tip_p04s02-2' ).toggleClass( 'inactive active' ); }, 750 );
+
+  // Trigger animation
+  // Start animation after 1250ms
+  setTimeout( function(){
+    anim_p4_s2.play();
+    anim_p4_s2.addEventListener( 'loopComplete', function(){
+      anim_p4_s2.goToAndStop( 77, true );
+    });
+  }, 1250);
 };
 
 
@@ -728,12 +741,26 @@ function anim_p04_4()
 
 function anim_p04_5()
 {
+  // Initialize animation
+  anim_p4_s5 = init_anim( 'anim_p04s05', '../bodymovin/p04s05/data.json' );
+
   // Activate screen/animation and tooltip
   $( '#anim_p04s05' ).toggleClass( 'inactive active' );
   setTimeout( function() { $( '#tip_p04s05' ).toggleClass( 'inactive active' ); }, 750 );
 
   // Trigger animation
-  // No animation for this tooltip
+  // Play animation and pause on frame 1
+  anim_p4_s5.addEventListener( 'data_ready', function(){
+    anim_p4_s5.goToAndStop( 1, true );
+  });
+
+  // Start animation after 1250ms
+  setTimeout( function(){
+    anim_p4_s5.play();
+    anim_p4_s5.addEventListener( 'loopComplete', function(){
+      anim_p4_s5.goToAndStop( 119, true );
+    });
+  }, 1250);
 };
 
 
