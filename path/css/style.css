@@ -818,7 +818,7 @@ fieldset {
 
 #tip_p04s02-2 {
   left: 450px;
-  bottom: 285px;
+  bottom: 275px;
 }
 
 /* Section 03 */
@@ -1159,7 +1159,7 @@ fieldset {
   /* ========= */
 
   #start .inner label {
-    width: 275px;
+    width: 235px;
   }
 
   #start .inner label > span {
@@ -1380,5 +1380,9 @@ fieldset {
 
   #start .inner label input[type=radio]:checked+span {
     background-image: url('../images/radio-button-checked.png');
+  }
+
+  #tip_p01s06 {
+    bottom: 333px;
   }
 }
