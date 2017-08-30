@@ -746,7 +746,7 @@ function anim_p04_5()
 
   // Activate screen/animation and tooltip
   $( '#anim_p04s05' ).toggleClass( 'inactive active' );
-  setTimeout( function() { $( '#tip_p04s05' ).toggleClass( 'inactive active' ); }, 750 );
+  setTimeout( function() { $( '#tip_p04s05' ).toggleClass( 'inactive active' ); }, 1250 );
 
   // Trigger animation
   // Play animation and pause on frame 1
